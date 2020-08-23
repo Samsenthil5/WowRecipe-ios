@@ -1,0 +1,16 @@
+{
+    "title": "Recipe Puppy",
+    "version": 0.1,
+    "href": "http:\/\/www.recipepuppy.com\/",
+    "results": [{
+        "title": "Tomoto bath1",
+        "href": "http:\/\/recipe.aol.com\/recipe\/tomoto-bath-\/79789",
+        "ingredients": "garlic paste",
+        "thumbnail": "http:\/\/img.recipepuppy.com\/44475.jpg"
+    }, {
+        "title": "Beef Stuffed Cabbage Rolls Recipe",
+        "href": "http:\/\/www.grouprecipes.com\/31954\/beef-stuffed-cabbage-rolls.html",
+        "ingredients": "rice, butter, eggs, garlic, cabbage, tomato, ground beef, onions, salt, water",
+        "thumbnail": ""
+    }]
+}

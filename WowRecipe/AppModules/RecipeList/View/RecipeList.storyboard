@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Recipe List View Controller-->
+        <scene sceneID="6cX-QT-ecC">
+            <objects>
+                <collectionViewController storyboardIdentifier="RecipeListVC" id="pfY-0d-1ke" customClass="RecipeListViewController" customModule="WowRecipe" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="SGk-ee-Kjl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <inset key="scrollIndicatorInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="J1E-YY-0pg">
+                            <size key="itemSize" width="150" height="350"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="recipeListCell" id="c6H-KQ-vpQ" customClass="MyRecipeCell" customModule="WowRecipe" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="350"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="FZx-rZ-RbK">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="350"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YPJ-xp-fuf">
+                                            <rect key="frame" x="15" y="10" width="120" height="192"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="192" id="2fy-8R-SJH"/>
+                                                <constraint firstAttribute="width" constant="170" id="eiy-Xc-YfI"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eS3-Ht-JGb">
+                                            <rect key="frame" x="15" y="222" width="120" height="18.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18.5" id="nn3-Zk-aKr"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Ingrediants" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdN-Ez-vHO">
+                                            <rect key="frame" x="15" y="248.5" width="120" height="20.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20.5" id="bRj-wD-rhw"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3z-7q-4WV">
+                                            <rect key="frame" x="15" y="279" width="120" height="50"/>
+                                            <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="Ads-Ut-69j"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <state key="normal" title="Shop Recipe">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <integer key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="onClickShopRecipe:" destination="c6H-KQ-vpQ" eventType="touchUpInside" id="UtU-5P-aUK"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="M3z-7q-4WV" secondAttribute="trailing" constant="15" id="1BT-e4-95v"/>
+                                        <constraint firstItem="M3z-7q-4WV" firstAttribute="leading" secondItem="FZx-rZ-RbK" secondAttribute="leading" constant="15" id="654-1a-yDI"/>
+                                        <constraint firstItem="rdN-Ez-vHO" firstAttribute="leading" secondItem="FZx-rZ-RbK" secondAttribute="leading" constant="15" id="6Zp-2h-kbd"/>
+                                        <constraint firstAttribute="trailing" secondItem="YPJ-xp-fuf" secondAttribute="trailing" constant="15" id="HJk-65-mtI"/>
+                                        <constraint firstAttribute="trailing" secondItem="eS3-Ht-JGb" secondAttribute="trailing" constant="15" id="HdP-X7-cDt"/>
+                                        <constraint firstItem="eS3-Ht-JGb" firstAttribute="top" secondItem="YPJ-xp-fuf" secondAttribute="bottom" constant="20" id="IL7-fo-xiL"/>
+                                        <constraint firstAttribute="bottom" secondItem="M3z-7q-4WV" secondAttribute="bottom" constant="21" id="PEn-eG-toQ"/>
+                                        <constraint firstItem="eS3-Ht-JGb" firstAttribute="leading" secondItem="FZx-rZ-RbK" secondAttribute="leading" constant="15" id="RYe-ve-5xI"/>
+                                        <constraint firstItem="rdN-Ez-vHO" firstAttribute="top" secondItem="eS3-Ht-JGb" secondAttribute="bottom" constant="8" id="TBO-sf-BOL"/>
+                                        <constraint firstItem="YPJ-xp-fuf" firstAttribute="leading" secondItem="FZx-rZ-RbK" secondAttribute="leading" constant="15" id="TZy-7i-Z1I"/>
+                                        <constraint firstAttribute="trailing" secondItem="rdN-Ez-vHO" secondAttribute="trailing" constant="15" id="a8t-bH-ote"/>
+                                        <constraint firstItem="YPJ-xp-fuf" firstAttribute="top" secondItem="FZx-rZ-RbK" secondAttribute="top" constant="10" id="mZo-RN-HLu"/>
+                                        <constraint firstItem="M3z-7q-4WV" firstAttribute="top" secondItem="rdN-Ez-vHO" secondAttribute="bottom" constant="10" id="xLL-nN-7R4"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="customSize" width="150" height="350"/>
+                                <connections>
+                                    <outlet property="receipIngredientsLabel" destination="rdN-Ez-vHO" id="1w6-y1-hdx"/>
+                                    <outlet property="recipeThumbnailImageView" destination="YPJ-xp-fuf" id="Jtg-YB-gUI"/>
+                                    <outlet property="recipeTitleLabel" destination="eS3-Ht-JGb" id="K4M-Td-hXG"/>
+                                    <outlet property="shopRecipeButton" destination="M3z-7q-4WV" id="2Qc-mO-Ilz"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="pfY-0d-1ke" id="4kw-27-UiT"/>
+                            <outlet property="delegate" destination="pfY-0d-1ke" id="gcZ-mu-cAl"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zOZ-no-Ph2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.521739130434788" y="568.52678571428567"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search Recipe View Controller-->
+        <scene sceneID="W5a-Pw-Ac8">
+            <objects>
+                <viewController storyboardIdentifier="SearchRecipeVC" id="qWQ-4e-NzG" customClass="SearchRecipeViewController" customModule="WowRecipe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UGk-2h-dlx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qMU-WP-lsB">
+                                <rect key="frame" x="15" y="373" width="384" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnH-WL-8Mq">
+                                        <rect key="frame" x="137" y="10" width="110" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter recipe name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uYL-Va-72X">
+                                        <rect key="frame" x="19" y="26" width="345" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="OU5-Xn-aLm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnK-pB-248">
+                                        <rect key="frame" x="15" y="78" width="354" height="46"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="dE8-hc-dd8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <state key="normal" title="Search Recipe">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onClickSearchRecipe:" destination="qWQ-4e-NzG" eventType="touchUpInside" id="2ZZ-Wo-0gK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="dnH-WL-8Mq" firstAttribute="leading" secondItem="qMU-WP-lsB" secondAttribute="leading" constant="137" id="279-Mg-WYF"/>
+                                    <constraint firstAttribute="trailing" secondItem="uYL-Va-72X" secondAttribute="trailing" constant="20" id="FBz-Ib-vt1"/>
+                                    <constraint firstAttribute="height" constant="150" id="MGL-U0-ma8"/>
+                                    <constraint firstItem="dnH-WL-8Mq" firstAttribute="top" secondItem="qMU-WP-lsB" secondAttribute="top" constant="10" id="QFW-lu-YiR"/>
+                                    <constraint firstItem="vnK-pB-248" firstAttribute="leading" secondItem="qMU-WP-lsB" secondAttribute="leading" constant="15" id="WMX-iv-VL4"/>
+                                    <constraint firstItem="vnK-pB-248" firstAttribute="top" secondItem="uYL-Va-72X" secondAttribute="bottom" constant="18" id="XjI-Jb-gzV"/>
+                                    <constraint firstAttribute="trailing" secondItem="dnH-WL-8Mq" secondAttribute="trailing" constant="137" id="aVV-kP-tMg"/>
+                                    <constraint firstAttribute="bottom" secondItem="vnK-pB-248" secondAttribute="bottom" constant="26" id="dWs-cG-Nvw"/>
+                                    <constraint firstItem="uYL-Va-72X" firstAttribute="top" secondItem="dnH-WL-8Mq" secondAttribute="bottom" constant="16" id="o7K-Ej-SCX"/>
+                                    <constraint firstAttribute="trailing" secondItem="vnK-pB-248" secondAttribute="trailing" constant="15" id="oak-JQ-9US"/>
+                                    <constraint firstItem="uYL-Va-72X" firstAttribute="leading" secondItem="qMU-WP-lsB" secondAttribute="leading" constant="19" id="p9K-Uo-Ld7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="yrU-QX-Dz6">
+                                <rect key="frame" x="188.5" y="547" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qMU-WP-lsB" firstAttribute="leading" secondItem="ya9-wh-8Jz" secondAttribute="leading" constant="15" id="RLI-IG-dxR"/>
+                            <constraint firstItem="qMU-WP-lsB" firstAttribute="centerY" secondItem="UGk-2h-dlx" secondAttribute="centerY" id="bMu-0M-Wmg"/>
+                            <constraint firstItem="yrU-QX-Dz6" firstAttribute="centerX" secondItem="UGk-2h-dlx" secondAttribute="centerX" id="vnJ-xb-jfu"/>
+                            <constraint firstItem="ya9-wh-8Jz" firstAttribute="trailing" secondItem="qMU-WP-lsB" secondAttribute="trailing" constant="15" id="wfr-25-T4N"/>
+                            <constraint firstItem="yrU-QX-Dz6" firstAttribute="top" secondItem="qMU-WP-lsB" secondAttribute="bottom" constant="24" id="zcw-lP-OK0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ya9-wh-8Jz"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchRecipeLoadingAnimator" destination="yrU-QX-Dz6" id="hTu-6Z-auO"/>
+                        <outlet property="searchRecipeTxt" destination="uYL-Va-72X" id="Tex-jc-4JG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AV0-zs-wix" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95.652173913043484" y="140.625"/>
+        </scene>
+    </scenes>
+</document>

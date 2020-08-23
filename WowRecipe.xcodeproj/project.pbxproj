@@ -1,0 +1,1122 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7006331C12A8195D8CF61933 /* Pods_WowRecipe_WowRecipeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 833962028E13DFD6CB796200 /* Pods_WowRecipe_WowRecipeUITests.framework */; };
+		8CE5E535FBBAD9ABDA95BEC5 /* Pods_WowRecipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55EA0FD5B77C98A6588D3552 /* Pods_WowRecipe.framework */; };
+		8D47A4AB4C6CB376A648805B /* Pods_WowRecipeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC0638FA21E48A90ED154E4 /* Pods_WowRecipeTests.framework */; };
+		9232A72524F1E66B004CA353 /* recipeMockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9232A72424F1E66B004CA353 /* recipeMockData.json */; };
+		9232A72624F1E6B5004CA353 /* recipeMockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9232A72424F1E66B004CA353 /* recipeMockData.json */; };
+		9232A72824F1E80A004CA353 /* MyBaseUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9232A72724F1E80A004CA353 /* MyBaseUnitTests.swift */; };
+		925062CD24EF64B400B434CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925062CC24EF64B400B434CF /* AppDelegate.swift */; };
+		925062D624EF64BF00B434CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 925062D524EF64BF00B434CF /* Assets.xcassets */; };
+		925062D924EF64BF00B434CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 925062D724EF64BF00B434CF /* LaunchScreen.storyboard */; };
+		925062EF24EF64C000B434CF /* WowRecipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925062EE24EF64C000B434CF /* WowRecipeUITests.swift */; };
+		9250630F24EF6AD800B434CF /* RecipeDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9250630E24EF6AD800B434CF /* RecipeDetails.storyboard */; };
+		9250631124EF6BBA00B434CF /* RecipeDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250631024EF6BBA00B434CF /* RecipeDetailsInteractor.swift */; };
+		9250631324EF6BCA00B434CF /* RecipeDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250631224EF6BCA00B434CF /* RecipeDetailsPresenter.swift */; };
+		9250631524EF6BD900B434CF /* RecipeDetailsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250631424EF6BD900B434CF /* RecipeDetailsEntity.swift */; };
+		9250631724EF6BEE00B434CF /* RecipeDetailsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250631624EF6BEE00B434CF /* RecipeDetailsViewProtocol.swift */; };
+		9250631924EF6C0200B434CF /* RecipeDetailsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250631824EF6C0200B434CF /* RecipeDetailsPresenterProtocol.swift */; };
+		9250631B24EF6C1800B434CF /* RecipeDetailsInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250631A24EF6C1800B434CF /* RecipeDetailsInteractorProtocol.swift */; };
+		9250631D24EF6C3F00B434CF /* RecipeDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250631C24EF6C3F00B434CF /* RecipeDetailsRouter.swift */; };
+		9250631F24EF72F400B434CF /* RecipeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250631E24EF72F400B434CF /* RecipeDetailsViewController.swift */; };
+		9250632A24EF921C00B434CF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250632924EF921C00B434CF /* Constants.swift */; };
+		9250633224EF93C900B434CF /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250633124EF93C900B434CF /* RecipeListViewController.swift */; };
+		9250633A24EF93EE00B434CF /* SearchRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250633924EF93EE00B434CF /* SearchRecipeViewController.swift */; };
+		9250633E24EF941600B434CF /* RecipeList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9250633D24EF941600B434CF /* RecipeList.storyboard */; };
+		9250634024EF94BD00B434CF /* RecipeListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250633F24EF94BD00B434CF /* RecipeListRouter.swift */; };
+		9250634224EF94D300B434CF /* RecipeListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250634124EF94D300B434CF /* RecipeListEntity.swift */; };
+		9250634424EF94DE00B434CF /* RecipeListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250634324EF94DE00B434CF /* RecipeListInteractor.swift */; };
+		9250634624EF94ED00B434CF /* RecipeListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250634524EF94EC00B434CF /* RecipeListPresenter.swift */; };
+		9250634824EF94FD00B434CF /* RecipeListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250634724EF94FD00B434CF /* RecipeListViewProtocol.swift */; };
+		9250634A24EF950A00B434CF /* RecipeListPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250634924EF950A00B434CF /* RecipeListPresenterProtocol.swift */; };
+		9250634C24EF951C00B434CF /* RecipeListInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250634B24EF951C00B434CF /* RecipeListInteractorProtocol.swift */; };
+		9250634E24EF952E00B434CF /* SearchRecipeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250634D24EF952E00B434CF /* SearchRecipeEntity.swift */; };
+		9250635024EF953900B434CF /* SearchRecipeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250634F24EF953900B434CF /* SearchRecipeInteractor.swift */; };
+		9250635224EF954800B434CF /* SearchRecipePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250635124EF954800B434CF /* SearchRecipePresenter.swift */; };
+		9250635424EF955400B434CF /* SearchRecipeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250635324EF955400B434CF /* SearchRecipeViewProtocol.swift */; };
+		9250635624EF956200B434CF /* SearchRecipePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250635524EF956200B434CF /* SearchRecipePresenterProtocol.swift */; };
+		9250635824EF957000B434CF /* SearchRecipeInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250635724EF957000B434CF /* SearchRecipeInteractorProtocol.swift */; };
+		9250635A24EF957E00B434CF /* SearchRecipeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250635924EF957E00B434CF /* SearchRecipeRouter.swift */; };
+		9250635C24EF97CB00B434CF /* RecipeDetailsRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250635B24EF97CB00B434CF /* RecipeDetailsRouterProtocol.swift */; };
+		9250635E24EF982000B434CF /* RecipeListRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250635D24EF982000B434CF /* RecipeListRouterProtocol.swift */; };
+		9250636024EF983400B434CF /* SearchRecipeRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250635F24EF983400B434CF /* SearchRecipeRouterProtocol.swift */; };
+		9250636724EFAA9C00B434CF /* SearchRecipe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9250636624EFAA9C00B434CF /* SearchRecipe.storyboard */; };
+		925063A924F0526700B434CF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925063A824F0526700B434CF /* NetworkManager.swift */; };
+		925063AB24F054D900B434CF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925063AA24F054D900B434CF /* Utils.swift */; };
+		925063AD24F0583900B434CF /* SearchRecipeServiceUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925063AC24F0583900B434CF /* SearchRecipeServiceUtility.swift */; };
+		925063AF24F0AF3800B434CF /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925063AE24F0AF3800B434CF /* UIColor.swift */; };
+		925B49B524F20308005DDD35 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 925B49B424F20308005DDD35 /* WebKit.framework */; };
+		925B49B724F21A98005DDD35 /* RecipeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925B49B624F21A98005DDD35 /* RecipeError.swift */; };
+		92AD405724F16AF3008C6B89 /* ImageCacheUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD405624F16AF3008C6B89 /* ImageCacheUtility.swift */; };
+		92AD405B24F17C39008C6B89 /* MyRecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD405A24F17C39008C6B89 /* MyRecipeCell.swift */; };
+		92AD405E24F183C6008C6B89 /* SearchRecipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD405D24F183C6008C6B89 /* SearchRecipeTests.swift */; };
+		92AD406024F183D8008C6B89 /* RecipeListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD405F24F183D7008C6B89 /* RecipeListTests.swift */; };
+		92AD406224F183E5008C6B89 /* RecipeDetailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD406124F183E5008C6B89 /* RecipeDetailsTests.swift */; };
+		92AD406424F18618008C6B89 /* UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD406324F18618008C6B89 /* UtilsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		925062E024EF64BF00B434CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 925062C124EF64B400B434CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 925062C824EF64B400B434CF;
+			remoteInfo = WowRecipe;
+		};
+		925062EB24EF64C000B434CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 925062C124EF64B400B434CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 925062C824EF64B400B434CF;
+			remoteInfo = WowRecipe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0EFFE88D8974C7117BE200B1 /* Pods-WowRecipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowRecipe.debug.xcconfig"; path = "Target Support Files/Pods-WowRecipe/Pods-WowRecipe.debug.xcconfig"; sourceTree = "<group>"; };
+		1B6E4218CF8AAC604B909997 /* Pods-WowRecipeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowRecipeTests.debug.xcconfig"; path = "Target Support Files/Pods-WowRecipeTests/Pods-WowRecipeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		55EA0FD5B77C98A6588D3552 /* Pods_WowRecipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowRecipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BA5E94B6DD3D9E6E4C74C4D /* Pods-WowRecipeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowRecipeTests.release.xcconfig"; path = "Target Support Files/Pods-WowRecipeTests/Pods-WowRecipeTests.release.xcconfig"; sourceTree = "<group>"; };
+		7CBA54211F4E32F2DFB9AE13 /* Pods-WowRecipe-WowRecipeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowRecipe-WowRecipeUITests.debug.xcconfig"; path = "Target Support Files/Pods-WowRecipe-WowRecipeUITests/Pods-WowRecipe-WowRecipeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		833962028E13DFD6CB796200 /* Pods_WowRecipe_WowRecipeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowRecipe_WowRecipeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E8E9EB4814CB8E4633CE496 /* Pods-WowRecipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowRecipe.release.xcconfig"; path = "Target Support Files/Pods-WowRecipe/Pods-WowRecipe.release.xcconfig"; sourceTree = "<group>"; };
+		9232A72424F1E66B004CA353 /* recipeMockData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = recipeMockData.json; sourceTree = "<group>"; };
+		9232A72724F1E80A004CA353 /* MyBaseUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBaseUnitTests.swift; sourceTree = "<group>"; };
+		925062C924EF64B400B434CF /* Wow Recipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wow Recipe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		925062CC24EF64B400B434CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		925062D524EF64BF00B434CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		925062D824EF64BF00B434CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		925062DA24EF64BF00B434CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		925062DF24EF64BF00B434CF /* WowRecipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WowRecipeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		925062E524EF64C000B434CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		925062EA24EF64C000B434CF /* WowRecipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WowRecipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		925062EE24EF64C000B434CF /* WowRecipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WowRecipeUITests.swift; sourceTree = "<group>"; };
+		925062F024EF64C000B434CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9250630E24EF6AD800B434CF /* RecipeDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecipeDetails.storyboard; sourceTree = "<group>"; };
+		9250631024EF6BBA00B434CF /* RecipeDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsInteractor.swift; sourceTree = "<group>"; };
+		9250631224EF6BCA00B434CF /* RecipeDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsPresenter.swift; sourceTree = "<group>"; };
+		9250631424EF6BD900B434CF /* RecipeDetailsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsEntity.swift; sourceTree = "<group>"; };
+		9250631624EF6BEE00B434CF /* RecipeDetailsViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsViewProtocol.swift; sourceTree = "<group>"; };
+		9250631824EF6C0200B434CF /* RecipeDetailsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsPresenterProtocol.swift; sourceTree = "<group>"; };
+		9250631A24EF6C1800B434CF /* RecipeDetailsInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsInteractorProtocol.swift; sourceTree = "<group>"; };
+		9250631C24EF6C3F00B434CF /* RecipeDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsRouter.swift; sourceTree = "<group>"; };
+		9250631E24EF72F400B434CF /* RecipeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsViewController.swift; sourceTree = "<group>"; };
+		9250632924EF921C00B434CF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9250633124EF93C900B434CF /* RecipeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewController.swift; sourceTree = "<group>"; };
+		9250633924EF93EE00B434CF /* SearchRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeViewController.swift; sourceTree = "<group>"; };
+		9250633D24EF941600B434CF /* RecipeList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecipeList.storyboard; sourceTree = "<group>"; };
+		9250633F24EF94BD00B434CF /* RecipeListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListRouter.swift; sourceTree = "<group>"; };
+		9250634124EF94D300B434CF /* RecipeListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListEntity.swift; sourceTree = "<group>"; };
+		9250634324EF94DE00B434CF /* RecipeListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListInteractor.swift; sourceTree = "<group>"; };
+		9250634524EF94EC00B434CF /* RecipeListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListPresenter.swift; sourceTree = "<group>"; };
+		9250634724EF94FD00B434CF /* RecipeListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewProtocol.swift; sourceTree = "<group>"; };
+		9250634924EF950A00B434CF /* RecipeListPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListPresenterProtocol.swift; sourceTree = "<group>"; };
+		9250634B24EF951C00B434CF /* RecipeListInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListInteractorProtocol.swift; sourceTree = "<group>"; };
+		9250634D24EF952E00B434CF /* SearchRecipeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeEntity.swift; sourceTree = "<group>"; };
+		9250634F24EF953900B434CF /* SearchRecipeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeInteractor.swift; sourceTree = "<group>"; };
+		9250635124EF954800B434CF /* SearchRecipePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipePresenter.swift; sourceTree = "<group>"; };
+		9250635324EF955400B434CF /* SearchRecipeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeViewProtocol.swift; sourceTree = "<group>"; };
+		9250635524EF956200B434CF /* SearchRecipePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipePresenterProtocol.swift; sourceTree = "<group>"; };
+		9250635724EF957000B434CF /* SearchRecipeInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeInteractorProtocol.swift; sourceTree = "<group>"; };
+		9250635924EF957E00B434CF /* SearchRecipeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeRouter.swift; sourceTree = "<group>"; };
+		9250635B24EF97CB00B434CF /* RecipeDetailsRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsRouterProtocol.swift; sourceTree = "<group>"; };
+		9250635D24EF982000B434CF /* RecipeListRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListRouterProtocol.swift; sourceTree = "<group>"; };
+		9250635F24EF983400B434CF /* SearchRecipeRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeRouterProtocol.swift; sourceTree = "<group>"; };
+		9250636624EFAA9C00B434CF /* SearchRecipe.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchRecipe.storyboard; sourceTree = "<group>"; };
+		925063A824F0526700B434CF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		925063AA24F054D900B434CF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		925063AC24F0583900B434CF /* SearchRecipeServiceUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeServiceUtility.swift; sourceTree = "<group>"; };
+		925063AE24F0AF3800B434CF /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		925B49B424F20308005DDD35 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		925B49B624F21A98005DDD35 /* RecipeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeError.swift; sourceTree = "<group>"; };
+		92AD405624F16AF3008C6B89 /* ImageCacheUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheUtility.swift; sourceTree = "<group>"; };
+		92AD405A24F17C39008C6B89 /* MyRecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRecipeCell.swift; sourceTree = "<group>"; };
+		92AD405D24F183C6008C6B89 /* SearchRecipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeTests.swift; sourceTree = "<group>"; };
+		92AD405F24F183D7008C6B89 /* RecipeListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListTests.swift; sourceTree = "<group>"; };
+		92AD406124F183E5008C6B89 /* RecipeDetailsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsTests.swift; sourceTree = "<group>"; };
+		92AD406324F18618008C6B89 /* UtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsTests.swift; sourceTree = "<group>"; };
+		BAC0638FA21E48A90ED154E4 /* Pods_WowRecipeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowRecipeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE7D58F932DA7FE6679E6DA4 /* Pods-WowRecipe-WowRecipeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowRecipe-WowRecipeUITests.release.xcconfig"; path = "Target Support Files/Pods-WowRecipe-WowRecipeUITests/Pods-WowRecipe-WowRecipeUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		925062C624EF64B400B434CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				925B49B524F20308005DDD35 /* WebKit.framework in Frameworks */,
+				8CE5E535FBBAD9ABDA95BEC5 /* Pods_WowRecipe.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		925062DC24EF64BF00B434CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D47A4AB4C6CB376A648805B /* Pods_WowRecipeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		925062E724EF64C000B434CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7006331C12A8195D8CF61933 /* Pods_WowRecipe_WowRecipeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		840ED1C8240F88C33E8EC245 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EFFE88D8974C7117BE200B1 /* Pods-WowRecipe.debug.xcconfig */,
+				8E8E9EB4814CB8E4633CE496 /* Pods-WowRecipe.release.xcconfig */,
+				7CBA54211F4E32F2DFB9AE13 /* Pods-WowRecipe-WowRecipeUITests.debug.xcconfig */,
+				DE7D58F932DA7FE6679E6DA4 /* Pods-WowRecipe-WowRecipeUITests.release.xcconfig */,
+				1B6E4218CF8AAC604B909997 /* Pods-WowRecipeTests.debug.xcconfig */,
+				7BA5E94B6DD3D9E6E4C74C4D /* Pods-WowRecipeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9232A72324F1E5FC004CA353 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				9232A72424F1E66B004CA353 /* recipeMockData.json */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		925062C024EF64B400B434CF = {
+			isa = PBXGroup;
+			children = (
+				925062CB24EF64B400B434CF /* WowRecipe */,
+				925062E224EF64BF00B434CF /* WowRecipeTests */,
+				925062ED24EF64C000B434CF /* WowRecipeUITests */,
+				925062CA24EF64B400B434CF /* Products */,
+				925B49B324F20308005DDD35 /* Frameworks */,
+				840ED1C8240F88C33E8EC245 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		925062CA24EF64B400B434CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				925062C924EF64B400B434CF /* Wow Recipe.app */,
+				925062DF24EF64BF00B434CF /* WowRecipeTests.xctest */,
+				925062EA24EF64C000B434CF /* WowRecipeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		925062CB24EF64B400B434CF /* WowRecipe */ = {
+			isa = PBXGroup;
+			children = (
+				925062FE24EF655A00B434CF /* AppModules */,
+				92AD405C24F17F8A008C6B89 /* AppSettings */,
+				9250630524EF692C00B434CF /* Common */,
+				9250630324EF666700B434CF /* WebService */,
+				925062D524EF64BF00B434CF /* Assets.xcassets */,
+				925062DA24EF64BF00B434CF /* Info.plist */,
+				925062D724EF64BF00B434CF /* LaunchScreen.storyboard */,
+			);
+			path = WowRecipe;
+			sourceTree = "<group>";
+		};
+		925062E224EF64BF00B434CF /* WowRecipeTests */ = {
+			isa = PBXGroup;
+			children = (
+				9232A72324F1E5FC004CA353 /* MockData */,
+				92AD406624F18731008C6B89 /* AppModuleTests */,
+				92AD406524F1871A008C6B89 /* UtilsTests */,
+				925062E524EF64C000B434CF /* Info.plist */,
+			);
+			path = WowRecipeTests;
+			sourceTree = "<group>";
+		};
+		925062ED24EF64C000B434CF /* WowRecipeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				925062EE24EF64C000B434CF /* WowRecipeUITests.swift */,
+				925062F024EF64C000B434CF /* Info.plist */,
+			);
+			path = WowRecipeUITests;
+			sourceTree = "<group>";
+		};
+		925062FE24EF655A00B434CF /* AppModules */ = {
+			isa = PBXGroup;
+			children = (
+				9250630224EF659000B434CF /* RecipeDetails */,
+				9250630124EF657E00B434CF /* RecipeList */,
+				925062FF24EF656800B434CF /* SearchRecipe */,
+			);
+			path = AppModules;
+			sourceTree = "<group>";
+		};
+		925062FF24EF656800B434CF /* SearchRecipe */ = {
+			isa = PBXGroup;
+			children = (
+				9250633724EF93E300B434CF /* Entity */,
+				9250633824EF93E300B434CF /* Interactor */,
+				9250633324EF93E300B434CF /* Presenter */,
+				9250633424EF93E300B434CF /* Protocol */,
+				9250633524EF93E300B434CF /* Router */,
+				9250633624EF93E300B434CF /* View */,
+			);
+			path = SearchRecipe;
+			sourceTree = "<group>";
+		};
+		9250630124EF657E00B434CF /* RecipeList */ = {
+			isa = PBXGroup;
+			children = (
+				9250632F24EF93B500B434CF /* Entity */,
+				9250632C24EF93B500B434CF /* Interactor */,
+				9250632E24EF93B500B434CF /* Presenter */,
+				9250633024EF93B500B434CF /* Protocol */,
+				9250632B24EF93B500B434CF /* Router */,
+				9250632D24EF93B500B434CF /* View */,
+			);
+			path = RecipeList;
+			sourceTree = "<group>";
+		};
+		9250630224EF659000B434CF /* RecipeDetails */ = {
+			isa = PBXGroup;
+			children = (
+				9250630724EF699800B434CF /* Entity */,
+				9250630A24EF69B800B434CF /* Interactor */,
+				9250630824EF69A700B434CF /* Presenter */,
+				9250630624EF698900B434CF /* Protocol */,
+				9250630B24EF69C300B434CF /* Router */,
+				9250630924EF69B100B434CF /* View */,
+			);
+			path = RecipeDetails;
+			sourceTree = "<group>";
+		};
+		9250630324EF666700B434CF /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				92AD405624F16AF3008C6B89 /* ImageCacheUtility.swift */,
+				925063A824F0526700B434CF /* NetworkManager.swift */,
+				925063AC24F0583900B434CF /* SearchRecipeServiceUtility.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		9250630524EF692C00B434CF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9250632824EF920E00B434CF /* Utils */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9250630624EF698900B434CF /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9250631A24EF6C1800B434CF /* RecipeDetailsInteractorProtocol.swift */,
+				9250631824EF6C0200B434CF /* RecipeDetailsPresenterProtocol.swift */,
+				9250635B24EF97CB00B434CF /* RecipeDetailsRouterProtocol.swift */,
+				9250631624EF6BEE00B434CF /* RecipeDetailsViewProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		9250630724EF699800B434CF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9250631424EF6BD900B434CF /* RecipeDetailsEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9250630824EF69A700B434CF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9250631224EF6BCA00B434CF /* RecipeDetailsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9250630924EF69B100B434CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9250630E24EF6AD800B434CF /* RecipeDetails.storyboard */,
+				9250631E24EF72F400B434CF /* RecipeDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9250630A24EF69B800B434CF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9250631024EF6BBA00B434CF /* RecipeDetailsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9250630B24EF69C300B434CF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9250631C24EF6C3F00B434CF /* RecipeDetailsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9250632824EF920E00B434CF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9250632924EF921C00B434CF /* Constants.swift */,
+				925B49B624F21A98005DDD35 /* RecipeError.swift */,
+				925063AE24F0AF3800B434CF /* UIColor.swift */,
+				925063AA24F054D900B434CF /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9250632B24EF93B500B434CF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9250633F24EF94BD00B434CF /* RecipeListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9250632C24EF93B500B434CF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9250634324EF94DE00B434CF /* RecipeListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9250632D24EF93B500B434CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92AD405A24F17C39008C6B89 /* MyRecipeCell.swift */,
+				9250633D24EF941600B434CF /* RecipeList.storyboard */,
+				9250633124EF93C900B434CF /* RecipeListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9250632E24EF93B500B434CF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9250634524EF94EC00B434CF /* RecipeListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9250632F24EF93B500B434CF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9250634124EF94D300B434CF /* RecipeListEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9250633024EF93B500B434CF /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9250634B24EF951C00B434CF /* RecipeListInteractorProtocol.swift */,
+				9250634924EF950A00B434CF /* RecipeListPresenterProtocol.swift */,
+				9250635D24EF982000B434CF /* RecipeListRouterProtocol.swift */,
+				9250634724EF94FD00B434CF /* RecipeListViewProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		9250633324EF93E300B434CF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9250635124EF954800B434CF /* SearchRecipePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9250633424EF93E300B434CF /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9250635724EF957000B434CF /* SearchRecipeInteractorProtocol.swift */,
+				9250635524EF956200B434CF /* SearchRecipePresenterProtocol.swift */,
+				9250635F24EF983400B434CF /* SearchRecipeRouterProtocol.swift */,
+				9250635324EF955400B434CF /* SearchRecipeViewProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		9250633524EF93E300B434CF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9250635924EF957E00B434CF /* SearchRecipeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9250633624EF93E300B434CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9250636624EFAA9C00B434CF /* SearchRecipe.storyboard */,
+				9250633924EF93EE00B434CF /* SearchRecipeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9250633724EF93E300B434CF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9250634D24EF952E00B434CF /* SearchRecipeEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9250633824EF93E300B434CF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9250634F24EF953900B434CF /* SearchRecipeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		925B49B324F20308005DDD35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				925B49B424F20308005DDD35 /* WebKit.framework */,
+				55EA0FD5B77C98A6588D3552 /* Pods_WowRecipe.framework */,
+				833962028E13DFD6CB796200 /* Pods_WowRecipe_WowRecipeUITests.framework */,
+				BAC0638FA21E48A90ED154E4 /* Pods_WowRecipeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92AD405C24F17F8A008C6B89 /* AppSettings */ = {
+			isa = PBXGroup;
+			children = (
+				925062CC24EF64B400B434CF /* AppDelegate.swift */,
+			);
+			path = AppSettings;
+			sourceTree = "<group>";
+		};
+		92AD406524F1871A008C6B89 /* UtilsTests */ = {
+			isa = PBXGroup;
+			children = (
+				92AD406324F18618008C6B89 /* UtilsTests.swift */,
+			);
+			path = UtilsTests;
+			sourceTree = "<group>";
+		};
+		92AD406624F18731008C6B89 /* AppModuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				92AD405D24F183C6008C6B89 /* SearchRecipeTests.swift */,
+				92AD405F24F183D7008C6B89 /* RecipeListTests.swift */,
+				92AD406124F183E5008C6B89 /* RecipeDetailsTests.swift */,
+				9232A72724F1E80A004CA353 /* MyBaseUnitTests.swift */,
+			);
+			path = AppModuleTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		925062C824EF64B400B434CF /* WowRecipe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 925062F324EF64C000B434CF /* Build configuration list for PBXNativeTarget "WowRecipe" */;
+			buildPhases = (
+				89156DA6EC82EE290F430535 /* [CP] Check Pods Manifest.lock */,
+				925062C524EF64B400B434CF /* Sources */,
+				925062C624EF64B400B434CF /* Frameworks */,
+				925062C724EF64B400B434CF /* Resources */,
+				92BE011024F3332D0057E995 /* SwiftLint Pods */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WowRecipe;
+			productName = WowRecipe;
+			productReference = 925062C924EF64B400B434CF /* Wow Recipe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		925062DE24EF64BF00B434CF /* WowRecipeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 925062F624EF64C000B434CF /* Build configuration list for PBXNativeTarget "WowRecipeTests" */;
+			buildPhases = (
+				A9ABE8A7792FE192A23D9110 /* [CP] Check Pods Manifest.lock */,
+				925062DB24EF64BF00B434CF /* Sources */,
+				925062DC24EF64BF00B434CF /* Frameworks */,
+				925062DD24EF64BF00B434CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				925062E124EF64BF00B434CF /* PBXTargetDependency */,
+			);
+			name = WowRecipeTests;
+			productName = WowRecipeTests;
+			productReference = 925062DF24EF64BF00B434CF /* WowRecipeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		925062E924EF64C000B434CF /* WowRecipeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 925062F924EF64C000B434CF /* Build configuration list for PBXNativeTarget "WowRecipeUITests" */;
+			buildPhases = (
+				A0431BBEEB1624A05CDC888C /* [CP] Check Pods Manifest.lock */,
+				925062E624EF64C000B434CF /* Sources */,
+				925062E724EF64C000B434CF /* Frameworks */,
+				925062E824EF64C000B434CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				925062EC24EF64C000B434CF /* PBXTargetDependency */,
+			);
+			name = WowRecipeUITests;
+			productName = WowRecipeUITests;
+			productReference = 925062EA24EF64C000B434CF /* WowRecipeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		925062C124EF64B400B434CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = Senthilmurugan;
+				TargetAttributes = {
+					925062C824EF64B400B434CF = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					925062DE24EF64BF00B434CF = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 925062C824EF64B400B434CF;
+					};
+					925062E924EF64C000B434CF = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 925062C824EF64B400B434CF;
+					};
+				};
+			};
+			buildConfigurationList = 925062C424EF64B400B434CF /* Build configuration list for PBXProject "WowRecipe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 925062C024EF64B400B434CF;
+			productRefGroup = 925062CA24EF64B400B434CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				925062C824EF64B400B434CF /* WowRecipe */,
+				925062DE24EF64BF00B434CF /* WowRecipeTests */,
+				925062E924EF64C000B434CF /* WowRecipeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		925062C724EF64B400B434CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9250636724EFAA9C00B434CF /* SearchRecipe.storyboard in Resources */,
+				9232A72624F1E6B5004CA353 /* recipeMockData.json in Resources */,
+				9250633E24EF941600B434CF /* RecipeList.storyboard in Resources */,
+				925062D924EF64BF00B434CF /* LaunchScreen.storyboard in Resources */,
+				9250630F24EF6AD800B434CF /* RecipeDetails.storyboard in Resources */,
+				925062D624EF64BF00B434CF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		925062DD24EF64BF00B434CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9232A72524F1E66B004CA353 /* recipeMockData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		925062E824EF64C000B434CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		89156DA6EC82EE290F430535 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WowRecipe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92BE011024F3332D0057E995 /* SwiftLint Pods */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Pods";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\" autocorrect\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		A0431BBEEB1624A05CDC888C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WowRecipe-WowRecipeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9ABE8A7792FE192A23D9110 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WowRecipeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		925062C524EF64B400B434CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9250635024EF953900B434CF /* SearchRecipeInteractor.swift in Sources */,
+				9250631324EF6BCA00B434CF /* RecipeDetailsPresenter.swift in Sources */,
+				9250635824EF957000B434CF /* SearchRecipeInteractorProtocol.swift in Sources */,
+				9250631524EF6BD900B434CF /* RecipeDetailsEntity.swift in Sources */,
+				9250634A24EF950A00B434CF /* RecipeListPresenterProtocol.swift in Sources */,
+				9250635A24EF957E00B434CF /* SearchRecipeRouter.swift in Sources */,
+				9250635424EF955400B434CF /* SearchRecipeViewProtocol.swift in Sources */,
+				9250631B24EF6C1800B434CF /* RecipeDetailsInteractorProtocol.swift in Sources */,
+				9250635224EF954800B434CF /* SearchRecipePresenter.swift in Sources */,
+				9250634824EF94FD00B434CF /* RecipeListViewProtocol.swift in Sources */,
+				9250635624EF956200B434CF /* SearchRecipePresenterProtocol.swift in Sources */,
+				925062CD24EF64B400B434CF /* AppDelegate.swift in Sources */,
+				9250634024EF94BD00B434CF /* RecipeListRouter.swift in Sources */,
+				9250633A24EF93EE00B434CF /* SearchRecipeViewController.swift in Sources */,
+				9250634E24EF952E00B434CF /* SearchRecipeEntity.swift in Sources */,
+				925B49B724F21A98005DDD35 /* RecipeError.swift in Sources */,
+				9250631924EF6C0200B434CF /* RecipeDetailsPresenterProtocol.swift in Sources */,
+				9250632A24EF921C00B434CF /* Constants.swift in Sources */,
+				9250631724EF6BEE00B434CF /* RecipeDetailsViewProtocol.swift in Sources */,
+				925063A924F0526700B434CF /* NetworkManager.swift in Sources */,
+				9250631D24EF6C3F00B434CF /* RecipeDetailsRouter.swift in Sources */,
+				9250634224EF94D300B434CF /* RecipeListEntity.swift in Sources */,
+				9250631124EF6BBA00B434CF /* RecipeDetailsInteractor.swift in Sources */,
+				9250634C24EF951C00B434CF /* RecipeListInteractorProtocol.swift in Sources */,
+				925063AF24F0AF3800B434CF /* UIColor.swift in Sources */,
+				925063AD24F0583900B434CF /* SearchRecipeServiceUtility.swift in Sources */,
+				925063AB24F054D900B434CF /* Utils.swift in Sources */,
+				9250636024EF983400B434CF /* SearchRecipeRouterProtocol.swift in Sources */,
+				92AD405B24F17C39008C6B89 /* MyRecipeCell.swift in Sources */,
+				9250631F24EF72F400B434CF /* RecipeDetailsViewController.swift in Sources */,
+				92AD405724F16AF3008C6B89 /* ImageCacheUtility.swift in Sources */,
+				9250635E24EF982000B434CF /* RecipeListRouterProtocol.swift in Sources */,
+				9250633224EF93C900B434CF /* RecipeListViewController.swift in Sources */,
+				9250634424EF94DE00B434CF /* RecipeListInteractor.swift in Sources */,
+				9250634624EF94ED00B434CF /* RecipeListPresenter.swift in Sources */,
+				9250635C24EF97CB00B434CF /* RecipeDetailsRouterProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		925062DB24EF64BF00B434CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92AD406224F183E5008C6B89 /* RecipeDetailsTests.swift in Sources */,
+				9232A72824F1E80A004CA353 /* MyBaseUnitTests.swift in Sources */,
+				92AD406024F183D8008C6B89 /* RecipeListTests.swift in Sources */,
+				92AD406424F18618008C6B89 /* UtilsTests.swift in Sources */,
+				92AD405E24F183C6008C6B89 /* SearchRecipeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		925062E624EF64C000B434CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				925062EF24EF64C000B434CF /* WowRecipeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		925062E124EF64BF00B434CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 925062C824EF64B400B434CF /* WowRecipe */;
+			targetProxy = 925062E024EF64BF00B434CF /* PBXContainerItemProxy */;
+		};
+		925062EC24EF64C000B434CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 925062C824EF64B400B434CF /* WowRecipe */;
+			targetProxy = 925062EB24EF64C000B434CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		925062D724EF64BF00B434CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				925062D824EF64BF00B434CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		925062F124EF64C000B434CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		925062F224EF64C000B434CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		925062F424EF64C000B434CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EFFE88D8974C7117BE200B1 /* Pods-WowRecipe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HFF4KUPM6A;
+				INFOPLIST_FILE = WowRecipe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.MyApp.WowRecipe;
+				PRODUCT_NAME = "Wow Recipe";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		925062F524EF64C000B434CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E8E9EB4814CB8E4633CE496 /* Pods-WowRecipe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HFF4KUPM6A;
+				INFOPLIST_FILE = WowRecipe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.MyApp.WowRecipe;
+				PRODUCT_NAME = "Wow Recipe";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		925062F724EF64C000B434CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B6E4218CF8AAC604B909997 /* Pods-WowRecipeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HFF4KUPM6A;
+				INFOPLIST_FILE = WowRecipeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.testSwiftUI.WowRecipeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WowRecipe.app/WowRecipe";
+			};
+			name = Debug;
+		};
+		925062F824EF64C000B434CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BA5E94B6DD3D9E6E4C74C4D /* Pods-WowRecipeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HFF4KUPM6A;
+				INFOPLIST_FILE = WowRecipeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.testSwiftUI.WowRecipeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WowRecipe.app/WowRecipe";
+			};
+			name = Release;
+		};
+		925062FA24EF64C000B434CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CBA54211F4E32F2DFB9AE13 /* Pods-WowRecipe-WowRecipeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HFF4KUPM6A;
+				INFOPLIST_FILE = WowRecipeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.testSwiftUI.WowRecipeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WowRecipe;
+			};
+			name = Debug;
+		};
+		925062FB24EF64C000B434CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE7D58F932DA7FE6679E6DA4 /* Pods-WowRecipe-WowRecipeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HFF4KUPM6A;
+				INFOPLIST_FILE = WowRecipeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.testSwiftUI.WowRecipeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WowRecipe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		925062C424EF64B400B434CF /* Build configuration list for PBXProject "WowRecipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				925062F124EF64C000B434CF /* Debug */,
+				925062F224EF64C000B434CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		925062F324EF64C000B434CF /* Build configuration list for PBXNativeTarget "WowRecipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				925062F424EF64C000B434CF /* Debug */,
+				925062F524EF64C000B434CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		925062F624EF64C000B434CF /* Build configuration list for PBXNativeTarget "WowRecipeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				925062F724EF64C000B434CF /* Debug */,
+				925062F824EF64C000B434CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		925062F924EF64C000B434CF /* Build configuration list for PBXNativeTarget "WowRecipeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				925062FA24EF64C000B434CF /* Debug */,
+				925062FB24EF64C000B434CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 925062C124EF64B400B434CF /* Project object */;
+}
