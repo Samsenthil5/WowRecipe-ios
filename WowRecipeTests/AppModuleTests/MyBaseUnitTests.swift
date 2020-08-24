@@ -8,7 +8,7 @@
 
 import XCTest
 
-@testable import WowRecipe
+@testable import Wow_Recipe
 
 struct MockData {
     static let searchTxt = "onion"

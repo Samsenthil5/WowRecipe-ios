@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import WowRecipe
+@testable import Wow_Recipe
 class SearchRecipeTests: MyBaseUnitTests {
     var searchRecipeVC: SearchRecipeViewController!
 

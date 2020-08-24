@@ -1008,7 +1008,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WowRecipe.app/WowRecipe";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wow Recipe.app/Wow Recipe";
 			};
 			name = Debug;
 		};
@@ -1031,7 +1031,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WowRecipe.app/WowRecipe";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wow Recipe.app/Wow Recipe";
 			};
 			name = Release;
 		};

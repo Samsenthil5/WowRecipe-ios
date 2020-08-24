@@ -15,6 +15,7 @@
 			dependencies = (
 			);
 			name = SwiftLint;
+			productName = SwiftLint;
 		};
 /* End PBXAggregateTarget section */
 
@@ -60,7 +61,7 @@
 		0E02FAA93D19B712A3FBC6900BBB6CF3 /* Pods-WowRecipe-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WowRecipe-acknowledgements.plist"; sourceTree = "<group>"; };
 		1DE67F32C049435FFAA5A7348B5617C2 /* Pods-WowRecipe-WowRecipeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WowRecipe-WowRecipeUITests.modulemap"; sourceTree = "<group>"; };
 		1E6FECFEC4C5E9473FE61647140C9963 /* Pods-WowRecipe-WowRecipeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WowRecipe-WowRecipeUITests.release.xcconfig"; sourceTree = "<group>"; };
-		2B34169A79B265B3854F0A733E30D33E /* Pods_WowRecipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WowRecipe.framework; path = "Pods-WowRecipe.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B34169A79B265B3854F0A733E30D33E /* Pods_WowRecipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowRecipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		304B0C92C23627E137D2AD50D1C9437C /* Pods-WowRecipe-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WowRecipe-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		33ABC37504DAF5C057BAEED992E833C0 /* Pods-WowRecipeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WowRecipeTests-dummy.m"; sourceTree = "<group>"; };
@@ -68,17 +69,17 @@
 		3BFEE76F65C53943CC5914F093E8F348 /* Pods-WowRecipe-WowRecipeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WowRecipe-WowRecipeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		437D8AD8C0F57B1104B087E840298EEF /* Pods-WowRecipeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WowRecipeTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		49C6BCC604F33554A963F5CD44745AE3 /* Pods-WowRecipe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WowRecipe.modulemap"; sourceTree = "<group>"; };
-		55313BF93EFA4E043163BABA2ED71F12 /* Pods_WowRecipeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WowRecipeTests.framework; path = "Pods-WowRecipeTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55313BF93EFA4E043163BABA2ED71F12 /* Pods_WowRecipeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowRecipeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F8626E2E64F2BE216E1C970F4162384 /* Pods-WowRecipe-WowRecipeUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WowRecipe-WowRecipeUITests-umbrella.h"; sourceTree = "<group>"; };
 		71B69F17B04FAC30720C56D99639E5E0 /* Pods-WowRecipeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WowRecipeTests-umbrella.h"; sourceTree = "<group>"; };
 		80A448714DCD2944CAB58F5462A5B768 /* Pods-WowRecipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WowRecipe.debug.xcconfig"; sourceTree = "<group>"; };
 		89F85ACF3D78B39506B75103B4694B36 /* SwiftLint.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.xcconfig; sourceTree = "<group>"; };
-		8B0F248812D98362AA7A1497105E0CCF /* Pods_WowRecipe_WowRecipeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WowRecipe_WowRecipeUITests.framework; path = "Pods-WowRecipe-WowRecipeUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B0F248812D98362AA7A1497105E0CCF /* Pods_WowRecipe_WowRecipeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowRecipe_WowRecipeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D627F5CB56AFE44A8076DB285D92E1F /* Pods-WowRecipeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WowRecipeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8F41A3CCDDA901B8BBEE42D7B2AD6909 /* Pods-WowRecipeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WowRecipeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		946238067C9A00595104F7E267385B94 /* Pods-WowRecipe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WowRecipe-dummy.m"; sourceTree = "<group>"; };
 		98611F8A5396328CA74CB39950D4AF10 /* Pods-WowRecipe-WowRecipeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WowRecipe-WowRecipeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AA33B0511A3C7ACA2CFD58FF807AB643 /* Pods-WowRecipeTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WowRecipeTests-Info.plist"; sourceTree = "<group>"; };
 		C2AFC65D76CDB0A26038ED2EF34B810F /* Pods-WowRecipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WowRecipe.release.xcconfig"; sourceTree = "<group>"; };
 		D88E995A37163279971B5A4F4B8103BA /* Pods-WowRecipeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WowRecipeTests.modulemap"; sourceTree = "<group>"; };
@@ -154,7 +155,6 @@
 			children = (
 				EEA599FE5C15138FF0981CCFB01E55AA /* Support Files */,
 			);
-			name = SwiftLint;
 			path = SwiftLint;
 			sourceTree = "<group>";
 		};
@@ -510,6 +510,7 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -570,6 +571,7 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
