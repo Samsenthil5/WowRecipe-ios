@@ -1,6 +1,6 @@
 # WowRecipe
 Wom Recipe is iOS Native application supports both iPhone and iPad. It will helps to search user's favorite recipe and showing them in list and details view. 
-Application minimum target version is iOS 13.1 and above.
+Application minimum target version is iOS 13.1 and above test.
 
 # Screenshots
 
