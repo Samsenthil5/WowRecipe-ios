@@ -11,6 +11,7 @@ import Foundation
 public typealias Dictionary = [String: Any]
 public typealias ResponseHandler = (URLResponse?, Dictionary?, Error? ) -> Void
 
+
 class NetworkManager {
     /// Get Response from Server
     /// - Parameters:
